@@ -664,6 +664,14 @@ input[type=submit]:hover{
 		width:100%;
 		left:0px;
 	}
+	
+	#ending{
+		visibility:hidden;
+	}
+	
+	#leaf-blob{
+		visibility:hidden;
+	}
 }
 
 /*scroll style effects*/
