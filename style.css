@@ -554,6 +554,10 @@ input[type=submit]:hover{
 /*RESPONSIVE implementation*/
 @media (max-width:700px){
 	
+	body,html{
+		width:100%;
+	}
+	
 	.infor{
 		text-align: center;
 	}
