@@ -630,6 +630,8 @@ input[type=submit]:hover{
 	
 	#hand-draw{
 		top:2500px;
+		width:100%;
+		left:0px;
 	}
 	
 	#work1 h1{
