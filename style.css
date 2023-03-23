@@ -553,6 +553,133 @@ input[type=submit]:hover{
 	cursor:pointer;
 }
 
+/*RESPONSIVE implementation*/
+@media screen and (max-width:600px){
+	
+	body,html{
+		min-width:100%;
+	}
+	
+	.infor{
+		text-align: center;
+	}
+	
+	.intro .watermark{
+		top:800px;
+		left:140px;
+	}
+	
+	.intro .watermark p{
+		font-size:8em;
+	}
+	
+	.intro-text{
+		margin-top:170px;
+	}
+	
+	.navagation{
+		display:block;
+		position:relative;
+	}
+	
+	.infor a{
+		display:block;
+		margin-top:10px;
+	}
+	.logo{
+		position:relative;
+		left:40%;
+	}
+	
+	.intro{
+		text-align:center;
+		margin-top: 50px;
+	}
+	
+	.intro .intro-text{
+		right: 50px;
+	}
+	
+	.intro #hero-img{
+		visibility:hidden;
+	}
+	
+	.intro #work-img{
+		visibility:hidden;
+	}
+	
+	.intro #sketch-img{
+	 left:160px;
+	 top:50px;
+	}
+	
+	.intro #scroll-img{
+		top: 400px;
+	}
+	
+	.intro h1{
+		font-size: 2rem;
+		text-align: center;
+	}
+	#contents .text-container{
+		flex-direction: column;
+	}
+	
+	#project .text-container{
+		flex-direction: column;
+	}
+	
+	#hand-draw{
+		visibility:hidden;
+	}
+	
+	#work1 h1{
+		font-size:3em;
+	}
+	
+	#work2 h1{
+		font-size:3em;
+	}
+	
+	#work3 h1{
+		font-size:3em;
+	}
+	
+	#wlotus-phone{
+		width:50%;
+		height:40%;
+		top:3700px;
+		left:-100px;
+	}
+	
+	#dental-laptop{
+		width:50%;
+		height:40%;
+		top:4600px;
+		left:100px;
+	}
+	
+	#fabs-laptop{
+		width:50%;
+		height:40%;
+		top:5200px;
+		left:200px;
+	}
+	
+	#contactForm{
+		width:100%;
+		left:0px;
+	}
+	
+	#ending{
+		visibility:hidden;
+	}
+	
+	#leaf-blob{
+		visibility:hidden;
+	}
+}
+
 /*scroll style effects*/
 .reveal{
 	position: relative;
