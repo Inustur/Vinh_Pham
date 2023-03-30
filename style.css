@@ -4,13 +4,13 @@
 	box-sizing: border-box;
 	font-family:'Poppins', san-serif;
 	scroll-behavior: smooth;
-	overflow-x:hidden;
 }
 
 body, html{
 	background:#f9f9f9;
 	width:100%;
 	height: 100vh;
+	overflow-x:hidden;
 }
 
 /*loading style and loading fade away*/
@@ -554,6 +554,141 @@ input[type=submit]:hover{
 }
 
 /*RESPONSIVE implementation*/
+/*mobile compability*/
+/*media query only visible in mobile screen*/
+@media (max-width:480px){
+	
+	body,html{
+		width:480px;
+	}
+	
+	.infor{
+		text-align: center;
+	}
+	
+	.intro .watermark{
+		top:800px;
+		left:140px;
+	}
+	
+	.intro .watermark p{
+		font-size:8em;
+	}
+	
+	.intro-text{
+		margin-top:170px;
+	}
+	
+	.navagation{
+		display:block;
+		position:relative;
+		left: 45%;
+	}
+	
+	.infor a{
+		display:block;
+		margin-top:10px;
+	}
+	.logo{
+		position:relative;
+		left:40%;
+	}
+	
+	.intro{
+		text-align:center;
+		margin-top: 50px;
+		background-color:#f3f3f3;
+	}
+	
+	.intro .intro-text{
+		right: 50%;
+	}
+	
+	.intro #hero-img{
+		visibility:hidden;
+	}
+	
+	.intro #work-img{
+		visibility:hidden;
+	}
+	
+	.intro #sketch-img{
+	 left:45%;
+	 top:50px;
+	}
+	
+	.intro #scroll-img{
+		top: 400px;
+		left: 40%;
+	}
+	
+	.intro h1{
+		font-size: 2rem;
+		text-align: center;
+	}
+	
+	#contents .text-container{
+		flex-direction: column;
+	}
+	
+	#project .text-container{
+		flex-direction: column;
+	}
+	
+	#hand-draw{
+		top:2500px;
+		left:0px;
+		width:100%;
+		height: auto;
+	}
+	
+	#work1 h1{
+		font-size:3em;
+	}
+	
+	#work2 h1{
+		font-size:3em;
+	}
+	
+	#work3 h1{
+		font-size:3em;
+	}
+	
+	#wlotus-phone{
+		width:50%;
+		height:40%;
+		top:3700px;
+		left:0%;
+	}
+	
+	#dental-laptop{
+		width:50%;
+		height:40%;
+		top:4600px;
+		left:0%;
+	}
+	
+	#fabs-laptop{
+		width:50%;
+		height:40%;
+		top:5200px;
+		left:0%;
+	}
+	
+	#contactForm{
+		width:100%;
+		left:0px;
+	}
+	
+	#ending{
+		visibility:hidden;
+	}
+	
+	#leaf-blob{
+		visibility:hidden;
+	}
+}
+
 @media screen and (max-width:600px){
 	
 	body,html{
