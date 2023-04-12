@@ -4,13 +4,13 @@
 	box-sizing: border-box;
 	font-family:'Poppins', san-serif;
 	scroll-behavior: smooth;
-	overflow-x: hidden;
 }
 
 body, html{
 	background:#f9f9f9;
 	min-height: 100vh;
 	min-width:100%;
+	overflow-x: hidden;
 }
 
 /*loading style and loading fade away*/
