@@ -427,8 +427,8 @@ section .container{
 /*work pics layout*/
 #wlotus-phone{
 	position:absolute;
-	top:2500px;
-	left:500px;
+	top:3000px;
+	left:600px;
 	animation-name: moving-around;
 	animation-duration:10s;
 	animation-timing-function: ease-in;
@@ -438,7 +438,7 @@ section .container{
 
 #dental-laptop{
 	position:absolute;
-	top:3300px;
+	top:4000px;
 	left:100px;
 	animation-name: moving-around;
 	animation-duration:10s;
@@ -449,7 +449,7 @@ section .container{
 
 #fabs-laptop{
 	position:absolute;
-	top:4100px;
+	top:4850px;
 	left:600px;
 	animation-name: moving-around;
 	animation-duration:10s;
@@ -462,7 +462,7 @@ section .container{
 	position:absolute;
 	width: 100px;
 	height:100px;
-	top:4730px;
+	top:5130px;
 	left:380px;
 }
 
@@ -470,7 +470,7 @@ section .container{
 	position:absolute;
 	font-size: 10em;
 	color: lightgray;
-	top:4800px;
+	top:5200px;
 	left:500px;
 	transform:rotate(20deg);
 	opacity:30%;
@@ -555,7 +555,7 @@ input[type=submit]:hover{
 /*RESPONSIVE implementation*/
 
 /*reduced screen on desktop compability*/
-@media (max-width:700px){
+@media (max-width:780px){
 	
 	body,html{
 		width:100%;
