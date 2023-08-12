@@ -10,7 +10,6 @@ body, html{
 	background:#f9f9f9;
 	min-height: 100vh;
 	min-width:100%;
-	overflow-x: hidden;
 }
 
 /*loading style and loading fade away*/
@@ -32,7 +31,7 @@ body, html{
 	width: 75px;
 	height:75px;
 	border: 15px solid #000;
-	border-top-color:#ffc4d1;
+	border-top-color:#A2B167;
 	border-radius:50%;
 	animation-name: loading;
 	animation-duration:1s;
@@ -121,55 +120,6 @@ section{
 	right:8%;
 }
 
-.intro #hero-img{
-	position: absolute;
-	left:20%;
-	top:-250px;
-	animation-name: pic-animation;
-	animation-duration: 1.5s;
-	animation-timing-function:ease-out;
-	transition: all 1s;
-}
-
-.intro #sketch-img{
-	position: absolute;
-	left:80%;
-	top:-120px;
-	height: 300px;
-	width:300px;
-}
-
-.intro #scroll-img{
-	position: absolute;
-	left:65%;
-	top:200px;
-	height: 100px;
-	width:100px;
-}
-
-.intro .watermark{
-	position:absolute;
-	top:600px;
-	left:30%;
-	opacity:30%;
-}
-
-.intro .watermark p{
-	font-size: 15em;
-	color:lightgray;
-	transform: rotate(30deg);
-	-webkit-transform:rotate(30deg);
-}
-
-@keyframes pic-animation{
-	from{
-		transform:translateX(-30px);
-	}
-	to{
-		transform:translateX(0px);
-	}
-}
-
 .intro .intro-text{
 	position: absolute;
 	right:0%;
@@ -180,14 +130,19 @@ section{
 }
 
 .intro h2{
-	font-size:2em;
+	font-size:3em;
 	animation-name: text-animation;
 	animation-duration: 1.5s;
 	animation-timing-function:linear;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	line-height: 40px;
+	text-decoration: underline;
+	text-decoration-color: #A2B167;
 }
 
 .intro h1{
-	font-size: 3em;
+	font-size: 4em;
 	animation-name: text-animation;
 	animation-duration: 1.5s;
 	animation-timing-function:linear;
@@ -203,22 +158,24 @@ section{
 	animation-name: text-animation;
 	animation-duration: 1.5s;
 	animation-timing-function:linear;
+	font-style: italic;
 }
 
+
 .option-section{
-	margin-top:10px;
+	margin-top:20px;
 }
 
 
 /*button syle and hover effects*/
 .button1{
-	background-color:#ffc4d1;
+	background-color:#A2B167;
 	color: #000;
 	margin-right:10px;
 	font-size: 16px;
 	border-radius: 10px;
 	border-style: solid;
-	border-color: #fbcbb3;
+	border-color: #7F7F3E;
 	border-width:0.5px;
 	box-shadow: 1px 1px 2px #a4bfb5;
 	height: 40px;
@@ -290,7 +247,7 @@ section:nth-child(3){
 	color: black;
 }
 section:nth-child(4){
-	color: #black;
+	color: black;
 	background: #f9f9f9;
 }
 section .container{
@@ -313,7 +270,7 @@ section .container{
 #contents .text-container .text-box{
 	margin: 20px;
 	padding: 20px;
-	background: #black;
+	background: #f9f9f9;
 	border-right-style: solid;
 	border-width:0.5px;
 }
@@ -322,6 +279,8 @@ section .container{
 	text-align: left;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+	text-decoration: underline;
+	text-decoration-color: #A2B167;
 }
 
 
@@ -340,7 +299,7 @@ section .container{
 #project .text-container .text-box{
 	margin: 20px;
 	padding: 20px;
-	background: #black;
+	background: #f9f9f9;
 	border-left-style: solid;
 	border-width:0.5px;
 }
@@ -350,14 +309,34 @@ section .container{
 }
 #project span{
 	text-decoration:underline;
+	text-decoration-color: #A2B167;
 }
 
-#hand-draw{
-	position:absolute;
-	width: 100%;
-	top:1700px;
-	left:100px;
-	opacity:15%;
+.made-icon{
+	margin-top: 20px;
+	display: flex;
+	gap:5px;
+}
+
+.made-icon i{
+	width: 30px;
+	height: auto;
+}
+
+.html{
+	color:red;
+}
+
+.css{
+	color:blue;
+}
+
+.js{
+	color:#FFCC34;
+}
+
+.wix{
+	font-weight: bold;
 }
 
 /*social media style*/
@@ -391,7 +370,7 @@ section .container{
 
 .social-media a:hover{
 	transform:translateX(60px);
-	color:#ff5757;
+	color:#7F7F3E;
 }
 
 .social-media span:hover{
@@ -418,76 +397,22 @@ section .container{
 	font-size:4em;
 }
 
+#work1 h1, #work2 h1, #work3 h1{
+	text-decoration:underline;
+	text-decoration-color: #A2B167;
+}
+
 /*contact form style*/
 #contact h1{
 	font-size:4em;
 }
 
 
-/*work pics layout*/
-#wlotus-phone{
-	position:absolute;
-	top:3000px;
-	left:600px;
-	animation-name: moving-around;
-	animation-duration:10s;
-	animation-timing-function: ease-in;
-	animation-iteration-count:infinite;
-	transition: all 10s;
-}
-
-#dental-laptop{
-	position:absolute;
-	top:4000px;
-	left:100px;
-	animation-name: moving-around;
-	animation-duration:10s;
-	animation-timing-function: ease-in;
-	animation-iteration-count:infinite;
-	transition: all 10s;
-}
-
-#fabs-laptop{
-	position:absolute;
-	top:4850px;
-	left:600px;
-	animation-name: moving-around;
-	animation-duration:10s;
-	animation-timing-function: ease-in;
-	animation-iteration-count:infinite;
-	transition: all 10s;
-}
-
-#leaf-blob{
-	position:absolute;
-	width: 100px;
-	height:100px;
-	top:5130px;
-	left:380px;
-}
-
-#ending{
-	position:absolute;
-	font-size: 10em;
-	color: lightgray;
-	top:5200px;
-	left:500px;
-	transform:rotate(20deg);
-	opacity:30%;
-}
-
-@keyframes moving-around{
-	0%{transform:translateY(-15px);}
-	25%{transform:translateY(0px);}
-	50%{transform:translateY(15px);}
-	75%{transform:translateY(0px);}
-	100%{transform:translateY(-15px);}
-}
-
 /*Contact form style*/
 
 #contact{
-	height:100vh;
+	width:80%;
+	height:auto;
 }
 
 #contact form{
@@ -530,7 +455,7 @@ section .container{
 }
 
 input[type=submit]{
-	background-color:#ffc4d1;
+	background-color:#A2B167;
 	color: #000;
 	margin-right:10px;
 	font-size: 16px;
@@ -552,10 +477,49 @@ input[type=submit]:hover{
 	transform:translateY(5px);
 	cursor:pointer;
 }
+
+/**/
+/*Intersection image*/
+.landing-image img{
+	width: 50%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0%, -50%);
+}
+
+.fabs img{
+	position:absolute;
+	width: 40%;
+	height:auto;
+	right:5%;
+	top:280%;
+	transform: translate(0%, 100%);
+}
+
+.dental img{
+	position:absolute;
+	width: 40%;
+	height:auto;
+	left:5%;
+	top:400%;
+	transform: translate(0%, 100%);
+}
+
+.wlotus img{
+	position:absolute;
+	width: 40%;
+	height:auto;
+	right:5%;
+	top:510%;
+	transform: translate(0%, 100%);
+}
+
 /*RESPONSIVE implementation*/
 
 /*reduced screen on desktop compability*/
-@media (max-width:780px){
+@media (max-width:700px){
 	
 	body,html{
 		width:100%;
@@ -565,14 +529,6 @@ input[type=submit]:hover{
 		text-align: center;
 	}
 	
-	.intro .watermark{
-		top:800px;
-		left:140px;
-	}
-	
-	.intro .watermark p{
-		font-size:8em;
-	}
 	
 	.intro-text{
 		margin-top:170px;
@@ -592,6 +548,7 @@ input[type=submit]:hover{
 		left:40%;
 	}
 	
+
 	.intro{
 		text-align:center;
 		margin-top: 50px;
@@ -601,27 +558,21 @@ input[type=submit]:hover{
 		right: 50px;
 	}
 	
-	.intro #hero-img{
-		visibility:hidden;
-	}
-	
-	.intro #work-img{
-		visibility:hidden;
-	}
-	
-	.intro #sketch-img{
-	 left:35%;
-	 top:5%;
-	}
-	
-	.intro #scroll-img{
-		top: 400px;
-	}
-	
 	.intro h1{
-		font-size: 2rem;
+		font-size: 1.5em;
 		text-align: center;
 	}
+
+	.intro h2{
+		font-size: 2em;
+		line-height: 15px;
+	}
+
+	.landing-image img{
+		top: 1000px;
+		width:90%;
+	}
+
 	#contents .text-container{
 		flex-direction: column;
 	}
@@ -630,11 +581,6 @@ input[type=submit]:hover{
 		flex-direction: column;
 	}
 	
-	#hand-draw{
-		top:2500px;
-		left:0px;
-		width:100%;
-	}
 	
 	#work1 h1{
 		font-size:3em;
@@ -647,39 +593,23 @@ input[type=submit]:hover{
 	#work3 h1{
 		font-size:3em;
 	}
-	
-	#wlotus-phone{
-		width:50%;
-		height:40%;
-		top:3300px;
-		left:-100px;
+
+	.fabs img{
+		top:480%;
+		right:30%;
+		width:60%;
 	}
-	
-	#dental-laptop{
-		width:50%;
-		height:40%;
-		top:4200px;
-		left:100px;
+
+	.dental img{
+		top:600%;
+		left:30%;
+		width:60%;
 	}
-	
-	#fabs-laptop{
-		width:50%;
-		height:40%;
-		top:4800px;
-		left:-100px;
-	}
-	
-	#contactForm{
-		width:100%;
-		left:-100px;
-	}
-	
-	#ending{
-		visibility:hidden;
-	}
-	
-	#leaf-blob{
-		visibility:hidden;
+
+	.wlotus img{
+		top:700%;
+		right:30%;
+		width:60%;
 	}
 }
 
