@@ -527,6 +527,7 @@ input[type=submit]:hover{
 	
 	.infor{
 		text-align: center;
+		flex-direction: column;
 	}
 	
 	
@@ -595,18 +596,21 @@ input[type=submit]:hover{
 	}
 
 	.fabs img{
+		display: none;
 		top:480%;
 		right:30%;
 		width:60%;
 	}
 
 	.dental img{
+		display: none;
 		top:600%;
 		left:30%;
 		width:60%;
 	}
 
 	.wlotus img{
+		display: none;
 		top:700%;
 		right:30%;
 		width:60%;
