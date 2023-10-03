@@ -98,8 +98,7 @@ body, html{
 }
 
 .infor a:hover{
-	background-color:#000;
-	color: white;
+	transform: translateY(2px);
 }
 
 .infor a:active{
@@ -456,7 +455,6 @@ section .container{
 }
 
 #contact a{
-	text-decoration:none;
 	font-size: 16px;
 	font-style:italic;
 	color:#A2B167;
@@ -574,11 +572,11 @@ input[type=submit]:hover{
 	}
 	
 	.intro h1{
-		font-size: 1.5em;
+		font-size: 1.1em;
 	}
 
 	.intro h2{
-		font-size: 1.8em;
+		font-size: 1.6em;
 	}
 
 	.intro h5{

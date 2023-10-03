@@ -2,16 +2,28 @@
 <html lang="en">
 
 <head>
+	<!--SEO meta set-->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+	<meta name="author" content="Vinh Pham">
+	<meta name="description" content="Vinh Pham's official website portfolio, which features several projects and skillset as a Front-End Developer(aspiring User Experience Design).">
+	<meta name="title" content="Vinh Pham's portfolio">
+	<meta name="robots" content="noindex,follow">
+	<meta name="keywords" content="VinhPham, portfolio, website, Front-End, Developer, User Experience, Saskatoon, Saskatchewan, Canada">
+	<meta http-equiv="content-language" content="en">
+	<!--tittle-->
 	<title>Vinh's portfolio</title>
+
+	<!--links-->
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/x-icon" href="favicon.svg">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
 	<link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+
+	<!--scripts-->
 	<script defer src="scrollAnimation.js"></script>
 	<script defer src="loading.js"></script>
 	<script defer src="submitform.js"></script>
@@ -19,7 +31,7 @@
 </head>
 
 <body>
-	
+	<!--Nav Bar-->
 	<div class="navagation">
 		<img src="Avatar.png" class="logo">
 		<nav class="infor">
@@ -28,6 +40,7 @@
 			<a href="#project" class="chat-icon">Project <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 	</div>
 	
+	<!--Convenient Icon Section-->
 	<div class="social-media">
 			<a href="Vinh-Pham-Resume.pdf" target="_blank">
 				<i class="fa fa-file-pdf-o" aria-hidden="true"><span>Resume</span></i></a>
@@ -37,7 +50,7 @@
 			<a href="#hero-img"><i class="fa fa-hand-o-up" aria-hidden="true"></i><span>Go Up</span></a>
 	</div>
 	
-
+	<!--Landing Section-->
 	<section class="intro">
 		<div class="intro-text">
 			<h6>Xin chao, I am,</h6>
@@ -57,6 +70,7 @@
 		<img src="landing-img.png">
 	</div>
 	
+	<!--Skill Section-->
 	<section id="contents">
 		<div class="container reveal">
 			<h2>Skills.</h2>
@@ -94,6 +108,7 @@
 		</div>
 	</section>
 	
+	<!--Project Section/Portfolio-->
 	<section id="project">
 		<div class="container reveal">
 			<h2>Projects.</h2>
@@ -232,14 +247,23 @@
 		</div>
 	</section>
 	
+	<!--Contact Section-->
 	<section id="contact">
 		<div class="container reveal">
+
+			<div>
 			<h1><span>Let</span>'<span>s</span> <span>talk</span>.</h1>
-			<p>How was your experience?</p>
-			<p>Connect with me and talk about our next step.</p>
-			<a href="tel:+16399948588"><ion-icon name="call-outline"></ion-icon>:(639)-994-8588</a><br>
-			<a href="mailto:tip434@mail.usask.ca"><ion-icon name="mail-unread-outline"></ion-icon>:tip434@usask.ca</a>
+				<p>How was your experience?</p>
+				<p>Connect with me and talk about our next step.</p>
+			</div>
+
+			<div>
+				<a href="tel:+16399948588">(639)-994-8588</a><br>
+				<a href="mailto:tip434@mail.usask.ca">tip434@usask.ca</a>
+			</div>
+
 		</div>
+
 		<form id="submission" action="https://formsubmit.co/tip434@mail.usask.ca" method="POST" target="_blank">      
 			<input name="name" type="text" class="input" id="name" placeholder="Name" />   
 			<input name="email" type="text" class="input" id="email" placeholder="Email" />
@@ -247,6 +271,8 @@
 			<input type="submit" value="Send"/>
 		</form>
 	</section>
+
+	<!--Intersection image-->
 	<div class="contact-img"><img src="contact-img.png"></div>
 	
 	<div class="loader"></div>
