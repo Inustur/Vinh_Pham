@@ -174,7 +174,7 @@ section{
 	margin-right:10px;
 	font-size: 16px;
 	border-radius: 10px;
-	border-style: solid;
+	border-style: none;
 	border-color: #7F7F3E;
 	border-width:0.5px;
 	box-shadow: 1px 1px 2px #a4bfb5;
@@ -214,6 +214,32 @@ section{
 .button2:hover{
 	transform:translateY(5px);
 	cursor:pointer;
+}
+
+.button-project{
+	display: flex;
+	text-align: left;
+	justify-content: start;
+	gap:10px;
+	align-items: center;
+	background-color:transparent;
+	color: #000;
+	margin-top: 10px;
+	font-size: 16px;
+	border-style: solid;
+	border-left-style: none;
+	border-width: 1px;
+	height: 40px;
+	width: 95px;
+	cursor: pointer;
+}
+
+.button-project ion-icon{
+	font-size: 24px;
+}
+
+.button-project b{
+	text-decoration: underline;
 }
 
 /*loading effect for hero section*/
@@ -294,22 +320,35 @@ section .container{
 
 #project .text-container{
 	display: flex;
+	flex-wrap: wrap;
 	border-width:0.5px;
 }
+
 #project .text-container .text-box{
 	margin: 20px;
 	padding: 20px;
 	background: #f9f9f9;
 	border-left-style: solid;
 	border-width:0.5px;
+	max-width: 380px;
 }
 
 #project h2{
 	font-size: 4em;
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-color: #A2B167;
 }
 #project span{
 	text-decoration:underline;
 	text-decoration-color: #A2B167;
+}
+
+#project img{
+	max-width: 280px;
+	height:auto;
+	border-style: solid;
+	border-width: 0.5px;
 }
 
 .made-icon{
@@ -335,8 +374,23 @@ section .container{
 	color:#FFCC34;
 }
 
-.wix{
+.slash{
+	font-size: 12px;
+}
+
+.word-icon1{
+	font-size:12px;
 	font-weight: bold;
+}
+
+.word-icon2{
+	font-size:12px;
+	font-weight: bold;
+	color:brown;
+}
+
+.react{
+	color:#6B8EE8;
 }
 
 /*social media style*/
@@ -377,34 +431,13 @@ section .container{
 	opacity:1;
 }
 
-/*work#1 style*/
-
-#work1 h1{
-	font-size:4em;
-}
-
-/*work2 style*/
-#work2{
-	text-align: right;
-}
-
-#work2 h1{
-	font-size:4em;
-}
-
-/*work3 style*/
-#work3 h1{
-	font-size:4em;
-}
-
-#work1 h1, #work2 h1, #work3 h1{
-	text-decoration:underline;
-	text-decoration-color: #A2B167;
-}
-
 /*contact form style*/
 #contact h1{
-	font-size:4em;
+	font-size: 4em;
+}
+#contact h1 span{
+	text-decoration: underline;
+	text-decoration-color: #A2B167;
 }
 
 
@@ -426,12 +459,12 @@ section .container{
 #contact a{
 	text-decoration:none;
 	font-style:italic;
-	color:#cc00cc;
+	color:#A2B167;
 	transition:all 0.5s;
 }
 
 #contact a:hover{
-	color:#ff4dff;
+	color:#48621F;
 }
 
 #contact a:active{
@@ -460,8 +493,7 @@ input[type=submit]{
 	margin-right:10px;
 	font-size: 16px;
 	border-radius: 10px;
-	border-style: solid;
-	border-color: #fbcbb3;
+	border-style: none;
 	border-width:0.5px;
 	box-shadow: 1px 1px 2px #a4bfb5;
 	height: 40px;
@@ -489,31 +521,13 @@ input[type=submit]:hover{
 	transform: translate(0%, -50%);
 }
 
-.fabs img{
+.contact-img img{
 	position:absolute;
 	width: 40%;
 	height:auto;
 	right:5%;
-	top:280%;
-	transform: translate(0%, 100%);
-}
-
-.dental img{
-	position:absolute;
-	width: 40%;
-	height:auto;
-	left:5%;
-	top:400%;
-	transform: translate(0%, 100%);
-}
-
-.wlotus img{
-	position:absolute;
-	width: 40%;
-	height:auto;
-	right:5%;
-	top:510%;
-	transform: translate(0%, 100%);
+	top:340%;
+	transform: translate(0%, 100%) skewX(-5deg);
 }
 
 /*RESPONSIVE implementation*/
@@ -580,37 +594,10 @@ input[type=submit]:hover{
 	#project .text-container{
 		flex-direction: column;
 	}
-	
-	
-	#work1 h1{
-		font-size:3em;
-	}
-	
-	#work2 h1{
-		font-size:3em;
-	}
-	
-	#work3 h1{
-		font-size:3em;
-	}
 
-	.fabs img{
+	.contact-img img{
 		display: none;
 		top:480%;
-		right:30%;
-		width:60%;
-	}
-
-	.dental img{
-		display: none;
-		top:600%;
-		left:30%;
-		width:60%;
-	}
-
-	.wlotus img{
-		display: none;
-		top:700%;
 		right:30%;
 		width:60%;
 	}
