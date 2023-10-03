@@ -136,7 +136,6 @@ section{
 	animation-timing-function:linear;
 	margin-top: 20px;
 	margin-bottom: 30px;
-	line-height: 40px;
 	text-decoration: underline;
 	text-decoration-color: #A2B167;
 }
@@ -458,6 +457,7 @@ section .container{
 
 #contact a{
 	text-decoration:none;
+	font-size: 16px;
 	font-style:italic;
 	color:#A2B167;
 	transition:all 0.5s;
@@ -578,8 +578,11 @@ input[type=submit]:hover{
 	}
 
 	.intro h2{
-		font-size: 2em;
-		line-height: 30px;
+		font-size: 1.8em;
+	}
+
+	.intro h5{
+		font-size: 12px;
 	}
 
 	.landing-image img{
@@ -593,6 +596,14 @@ input[type=submit]:hover{
 	
 	#project .text-container{
 		flex-direction: column;
+	}
+
+	.button-project{
+		border-color: #000;
+	}
+
+	.button-project b{
+		font-size: 14px;
 	}
 
 	.contact-img img{
