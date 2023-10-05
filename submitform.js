@@ -8,9 +8,6 @@ if (name.value == "" || email.value == "") {
 } else {
     // perform operation with form input
     alert("Received!! Thank you for your time.");
-    name.value = "";
-    email.value = "";
-    comment.value = "";
   }
 };
 
