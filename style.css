@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -130,6 +132,7 @@ section{
 
 .intro h2{
 	font-size:2.5em;
+	font-family: "Roboto", serif;
 	animation-name: text-animation;
 	animation-duration: 1.5s;
 	animation-timing-function:linear;
@@ -454,21 +457,6 @@ section .container{
 	margin-top:-30px;
 }
 
-#contact a{
-	font-size: 16px;
-	font-style:italic;
-	color:#A2B167;
-	transition:all 0.5s;
-}
-
-#contact a:hover{
-	color:#48621F;
-}
-
-#contact a:active{
-	color:#1a001a;
-}
-
 .input{
 	color:#000;
 	font-weight:500;
@@ -533,8 +521,8 @@ input[type=submit]:hover{
 }
 
 .form-status{
-        margin-top: 20px;
-        font-size: 1.2em;
+	margin-top: 20px;
+	font-size: 1.2em;
 	font-family: "Poppins", sans-serif;
 	color:#7F7F3E;
 	font-style: italic;
