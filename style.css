@@ -100,7 +100,7 @@ body, html{
 }
 
 .infor a:hover{
-	transform: translateY(2px);
+	transform: translateY(5px);
 }
 
 .infor a:active{
@@ -150,7 +150,7 @@ section{
 	animation-timing-function:linear;
 }
 
-.intro h6{
+.intro h3{
 	animation-name: text-animation;
 	animation-duration: 1.5s;
 	animation-timing-function:linear;
@@ -312,13 +312,6 @@ section .container{
 
 
 /*project section style*/
-#project{
-	display:flex;
-	text-align:left;
-	justify-content:center;
-	align-items: center;
-}
-
 #project .text-container{
 	display: flex;
 	flex-wrap: wrap;
@@ -334,12 +327,20 @@ section .container{
 	max-width: 380px;
 }
 
+#project .description{
+	max-width: 200px;
+	font-style: italic;
+	text-align:left;
+	font-size: 0.7em;
+}
+
 #project h2{
 	font-size: 4em;
 	text-align: center;
 	text-decoration: underline;
 	text-decoration-color: #A2B167;
 }
+
 #project span{
 	text-decoration:underline;
 	text-decoration-color: #A2B167;
@@ -347,7 +348,7 @@ section .container{
 
 #project img{
 	max-width: 280px;
-	height:auto;
+	height:150px;
 	border-style: solid;
 	border-width: 0.5px;
 }
@@ -395,6 +396,14 @@ section .container{
 	color:#6B8EE8;
 }
 
+.svg-icon{
+	width:20px;
+	height: 20px;
+}
+
+.node{
+	color:#626f2f
+}
 /*social media style*/
 .social-media{
 	display:flex;
