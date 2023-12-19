@@ -236,12 +236,19 @@ section{
 	color: #000;
 	margin-top: 10px;
 	font-size: 16px;
-	border-style: solid;
-	border-left-style: none;
-	border-width: 1px;
+	border: 2px solid #000; /* Thicker border for a retro look */
+	border-left: none;
+	box-shadow: 4px 4px 0 #d7d7d7; /* Pronounced shadow for depth */
+	background-image: linear-gradient(transparent, #f9f9f9); /* Gradient for a vintage feel */
 	height: 40px;
 	width: 95px;
 	cursor: pointer;
+	transition: all 1s;
+}
+
+.button-project:hover{
+	transform: translateY(5px);
+	box-shadow: 2px 2px 0 #f9f9f9; /* Slightly reduce shadow on hover */
 }
 
 .button-project ion-icon{
@@ -283,19 +290,19 @@ section .container{
 	font-size: 40px;
 	text-align: center;
 	text-transform: uppercase;
+	text-decoration: underline;
+	text-decoration-color: #7F7F3E;
 }
 #contents .text-container{
 	display: flex;
-	border-bottom-style:solid;
-	border-top-style: solid;
-	border-width:0.5px;
 }
 #contents .text-container .text-box{
 	margin: 20px;
 	padding: 20px;
 	background: #f9f9f9;
-	border-right-style: solid;
-	border-width:0.5px;
+	border: 4px solid #000; /* Thicker border for a retro look */
+	box-shadow: 4px 4px 0 #000; /* Pronounced shadow for depth */
+	background-image: linear-gradient(transparent, #f9f9f9); /* Gradient for a vintage feel */
 }
 #contents .text-container .text-box h3{
 	font-size: 30px;
@@ -317,9 +324,9 @@ section .container{
 #project .text-container .text-box{
 	margin: 20px;
 	padding: 20px;
-	background: #f9f9f9;
-	border-left-style: solid;
-	border-width:0.5px;
+	border: 4px solid #000; /* Thicker border for a retro look */
+	box-shadow: 4px 4px 0 #000; /* Pronounced shadow for depth */
+	background-image: linear-gradient(transparent, #f9f9f9); /* Gradient for a vintage feel */
 	max-width: 380px;
 }
 
@@ -408,6 +415,7 @@ section .container{
 	position:fixed;
 	right:50px;
 	bottom: 50px;
+	z-index: 99;
 }
 
 .social-media a{
@@ -470,7 +478,9 @@ section .container{
 	border-radius: 5px;
 	line-height: 22px;
 	background-color: transparent;
-	border:2px solid #000;
+	border: 4px solid #000; /* Thicker border for a retro look */
+	box-shadow: 4px 4px 0 #000; /* Pronounced shadow for depth */
+	background-image: linear-gradient(transparent, #f9f9f9); /* Gradient for a vintage feel */
 	transition: all 0.3s;
 	padding: 13px;
 	margin-bottom: 15px;
@@ -480,17 +490,18 @@ section .container{
 }
 
 input[type=submit]{
-	background-color:#C7DE6C;
 	color: #000;
-	margin-right:10px;
-	font-size: 16px;
+	margin-right: 10px;
+	font-size: 1.2em;
 	border-radius: 10px;
-	border-style: none;
-	border-width:0.5px;
-	box-shadow: 1px 1px 2px #a4bfb5;
-	height: 40px;
-	width: 110px;
+	height: 60px;
+	width: 150px;
 	cursor: pointer;
+	transition: transform 0.5s, box-shadow 0.5s;
+	border: 4px solid #000; /* Thicker border for a retro look */
+	box-shadow: 4px 4px 0 #000; /* Pronounced shadow for depth */
+	background-image: linear-gradient(#C7DE6C, #A6B85C); /* Gradient for a vintage feel */
+	text-shadow: 1px 1px #fff; /* Text shadow for a retro effect */
 	animation-name: text-animation;
 	animation-duration: 1.5s;
 	animation-timing-function:linear;
