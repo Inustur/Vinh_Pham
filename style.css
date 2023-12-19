@@ -283,9 +283,6 @@ section .container{
 	margin: 100px;
 }
 
-#contents h1{
-	font-size: 3rem;
-}
 #contents h2{
 	font-size: 40px;
 	text-align: center;
@@ -299,6 +296,7 @@ section .container{
 #contents .text-container .text-box{
 	margin: 20px;
 	padding: 20px;
+	width:calc(23.5vw - 25px);
 	background: #f9f9f9;
 	border: 4px solid #000; /* Thicker border for a retro look */
 	box-shadow: 4px 4px 0 #000; /* Pronounced shadow for depth */
@@ -630,6 +628,10 @@ input[type=submit]:hover{
 		flex-direction: column;
 	}
 	
+	#contents .text-container .text-box{
+		width:35vw;
+	}
+
 	#project .text-container{
 		flex-direction: column;
 	}
