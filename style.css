@@ -599,13 +599,13 @@ input[type=submit]:hover{
 	}
 
 	.button1{
-		font-size: 1em;
+		font-size:0.8em;
 		width: 100px;
 		height:40px;
 	}
 	
 	.button2{
-		font-size: 1em;
+		font-size: 0.8em;
 		width: 100px;
 		height: 40px;
 	}
@@ -634,6 +634,16 @@ input[type=submit]:hover{
 
 	#project .text-container{
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#project .text-container .text-box{
+		width: 60vw;
+	}
+
+	#project img{
+		width: 50vw;
 	}
 
 	.button-project{
@@ -641,7 +651,7 @@ input[type=submit]:hover{
 	}
 
 	.button-project b{
-		font-size: 14px;
+		font-size: 0.8em;
 	}
 
 	.contact-img img{
