@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press-Start-2P:wght@400;700&display=swap');
 
 *{
 	margin: 0;
@@ -95,19 +96,9 @@ body, html{
 	transition:all 1s;
 }
 
-.infor .chat-icon{
-	border-style: solid;
-}
-
 .infor a:hover{
-	transform: translateY(5px);
+	color:#C7DE6C;
 }
-
-.infor a:active{
-	background: #359381;
-	color:#fff;
-}
-
 
 /*content pages style*/
 section{
@@ -115,106 +106,124 @@ section{
 }
 
 .intro{
-	position:relative;
-	text-align:right;
-	margin-top:250px;
-	right:8%;
-}
-
-.intro .intro-text{
-	position: absolute;
-	right:0%;
-	top:-100px;
-	z-index:99;
-	color:#000;
-	text-shadow:1px 1px 2px #fff;
-}
-
-.intro h2{
-	font-size:2.5em;
-	font-family: "Anton", "Roboto", serif;
-	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	animation-name: text-animation;
 	animation-duration: 1.5s;
 	animation-timing-function:linear;
-	margin-top: 5px;
-	margin-bottom: 30px;
+	transition: transform 0.5s;
+}
+
+.intro-text .underline{
 	text-decoration: underline;
 	text-decoration-color: #A2B167;
 }
 
-.intro h1{
-	font-size: 3em;
-	animation-name: text-animation;
-	animation-duration: 1.5s;
-	animation-timing-function:linear;
+.intro-text{
+	max-width: 95vw;
 }
 
-.intro h3{
-	animation-name: text-animation;
-	animation-duration: 1.5s;
-	animation-timing-function:linear;
+.intro-text p{
+	font-size: 1.5em;
+	margin-bottom:20px;
+	margin-top: -150px;
+	color:#535353;
+	font-weight: bold;
 }
 
-.intro h5{
-	animation-name: text-animation;
-	animation-duration: 1.5s;
-	animation-timing-function:linear;
-	font-style: italic;
+.intro-text h1{
+	font-size: calc(5.8em - 30px);
+	line-height: 2;
+}
+
+.hero-image1, .hero-image2, .hero-image3, h1 span {
+	display: inline-block; /* Makes images and text align inline */
+	vertical-align: middle; /* Aligns them vertically in the middle */
+}
+
+.intro-text h1 .hero-image1{
+	width:calc(20vw - 25px);
+	height: 100px;
+	border-radius: 50px;
+	border: #000 solid 5px;
+	transition: all 1s;
+}
+
+.intro-text h1 .hero-image2{
+	width: calc(28vw - 25px);
+	height: 100px;
+	border-radius: 50px 0 50px 50px;
+	border: #000 solid 5px;
+	transition: all 1s;
+}
+
+.intro-text h1 .hero-image3{
+	width:calc(18vw - 25px);
+	height: 100px;
+	border-radius: 0 50px 50px 50px;
+	border: #000 solid 5px;
+	transition: all 1s;
+}
+
+.hero-image1:hover{
+	transform: rotateZ(-10deg) skewX(-10deg);
+}
+
+.hero-image2:hover{
+	transform: rotateZ(10deg);
+}
+
+.hero-image3:hover{
+	transform: rotateZ(-10deg);
+}
+
+.front-end{
+	font-family: "Inter";
+}
+
+.game{
+	font-family: 'Press Start 2P', cursive;
+}
+
+.uxui{
+	font-family: "Inter";
+	text-decoration: underline #626f2f;
 }
 
 .option-section{
-	margin-top:20px;
+	margin-top:50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
 }
 
 
 /*button syle and hover effects*/
-.button1{
-	background-color:#A2B167;
+.button1, .button2 {
 	color: #000;
-	margin-right:10px;
-	font-size: 16px;
+	margin-right: 10px;
+	font-size: 1.2em;
 	border-radius: 10px;
-	border-style: none;
-	border-color: #7F7F3E;
-	border-width:0.5px;
-	box-shadow: 1px 1px 2px #a4bfb5;
-	height: 40px;
-	width: 110px;
+	height: 60px;
+	width: 150px;
 	cursor: pointer;
-	animation-name: text-animation;
-	animation-duration: 1.5s;
-	animation-timing-function:linear;
-	transition: transform 0.5s;
+	transition: transform 0.5s, box-shadow 0.5s;
+	border: 4px solid #000; /* Thicker border for a retro look */
+	box-shadow: 4px 4px 0 #000; /* Pronounced shadow for depth */
+	background-image: linear-gradient(#C7DE6C, #A6B85C); /* Gradient for a vintage feel */
+	text-shadow: 1px 1px #fff; /* Text shadow for a retro effect */
 }
 
-.button1:hover{
-	transform:translateY(5px);
-	cursor: pointer;
+.button1:hover, .button2:hover {
+	transform: translateY(5px);
+	box-shadow: 2px 2px 0 #000; /* Slightly reduce shadow on hover */
 }
 
-.button2{
-	background-color:transparent;
-	color: #000;
-	margin-right:10px;
-	font-size: 16px;
-	border-radius: 10px;
-	border-style: solid;
-	border-color: #000;
-	border-width:0.5px;
-	box-shadow: 1px 1px 2px #a4bfb5;
-	height: 40px;
-	width: 110px;
-	cursor: pointer;
-	animation-name: text-animation;
-	animation-duration: 1.5s;
-	animation-timing-function:linear;
-	transition: transform 0.5s;
-}
-
-.button2:hover{
-	transform:translateY(5px);
-	cursor:pointer;
+.button2 {
+	background-image: linear-gradient(transparent, #f9f9f9); /* Different gradient for the second button */
 }
 
 .button-project{
@@ -263,23 +272,10 @@ section{
 	align-items: center;
 }
 
-section:nth-child(1){
-	color: #f9f9f9;
-  }
-section:nth-child(2){
-	color: black;
-	background: #f9f9f9;
-} 
-section:nth-child(3){
-	color: black;
-}
-section:nth-child(4){
-	color: black;
-	background: #f9f9f9;
-}
 section .container{
 	margin: 100px;
 }
+
 #contents h1{
 	font-size: 3rem;
 }
@@ -315,7 +311,7 @@ section .container{
 #project .text-container{
 	display: flex;
 	flex-wrap: wrap;
-	border-width:0.5px;
+	border-width:1px;
 }
 
 #project .text-container .text-box{
@@ -484,7 +480,7 @@ section .container{
 }
 
 input[type=submit]{
-	background-color:#A2B167;
+	background-color:#C7DE6C;
 	color: #000;
 	margin-right:10px;
 	font-size: 16px;
@@ -538,6 +534,14 @@ input[type=submit]:hover{
 	font-style: italic;
 }
 
+.credit{
+ 	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	color: #535353;
+}
+
 /*RESPONSIVE implementation*/
 /**/
 
@@ -556,9 +560,47 @@ input[type=submit]:hover{
 	
 	
 	.intro-text{
-		margin-top:170px;
+		margin-top:20px;
+	}
+
+	.intro-text h1{
+		font-size: 1.8em;
+	}
+
+	.intro-text h1 .hero-image1{
+		width:20vw;
+		height: 50px;
+		border-width: 2.5px;
+	}
+
+	.intro-text h1 .hero-image2{
+		width:30vw;
+		height: 50px;
+		border-width: 2.5px;
+	}
+
+	.intro-text h1 .hero-image3{
+		width:20vw;
+		height: 50px;
+		border-width: 2.5px;
+	}
+
+	.option-section{
+		gap:20px;
+	}
+
+	.button1{
+		font-size: 1em;
+		width: 100px;
+		height:40px;
 	}
 	
+	.button2{
+		font-size: 1em;
+		width: 100px;
+		height: 40px;
+	}
+
 	.navagation{
 		display:block;
 		position:relative;
@@ -571,33 +613,6 @@ input[type=submit]:hover{
 	.logo{
 		position:relative;
 		left:40%;
-	}
-	
-
-	.intro{
-
-		margin-top: 50px;
-	}
-	
-	.intro .intro-text{
-		right: 50px;
-	}
-	
-	.intro h1{
-		font-size: 1.1em;
-	}
-
-	.intro h2{
-		font-size: 1.6em;
-	}
-
-	.intro h5{
-		font-size: 12px;
-	}
-
-	.landing-image img{
-		top: 1000px;
-		width:90%;
 	}
 
 	#contents .text-container{
