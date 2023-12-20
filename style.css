@@ -367,15 +367,15 @@ section .container{
 }
 
 .html{
-	color:red;
+	color:#9c0808;
 }
 
 .css{
-	color:blue;
+	color:#3c54c0;
 }
 
 .js{
-	color:#FFCC34;
+	color:#d4ad00;
 }
 
 .slash{
@@ -390,7 +390,7 @@ section .container{
 .word-icon2{
 	font-size:12px;
 	font-weight: bold;
-	color:brown;
+	color:rgb(133, 37, 37);
 }
 
 .react{
