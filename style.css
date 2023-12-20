@@ -573,7 +573,11 @@ input[type=submit]:hover{
 	}
 
 	.intro-text h1{
-		font-size: 1.8em;
+		font-size: 1.6em;
+	}
+
+	.intro-text p{
+		font-size: 1em;
 	}
 
 	.intro-text h1 .hero-image1{
@@ -651,6 +655,14 @@ input[type=submit]:hover{
 	}
 
 	.button-project b{
+		font-size: 0.8em;
+	}
+
+	#contact h1{
+		font-size: 2em;
+	}
+
+	#contact p{
 		font-size: 0.8em;
 	}
 
